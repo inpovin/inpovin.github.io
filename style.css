@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0px 0px 0px 25px;
   padding: 0;
   font-family: "Anonymous Pro", monospace;
   line-height: 1.5em;
@@ -12,9 +12,9 @@ body {
   display: grid;
   grid-template-columns:
     1fr
-    270px
-    270px
-    270px
+    290px
+    290px
+    290px
     1fr;
   grid-template-rows:
     65px
@@ -24,7 +24,7 @@ body {
     70px
     1fr
     35px;
-  grid-gap: 10px;
+  grid-gap: 0px;
   grid-template-areas:
     "header header header header header"
     ". contentbox1 . . ."
@@ -136,15 +136,15 @@ h {
       auto;  
     grid-template-rows:
       90px
-      220px
-      220px
-      220px
+      240px
+      240px
+      240px
       35px;
     grid-template-areas:
       "header header header"
       ". contentbox1 ."
       ". contentbox2 ."
       ". contentbox3 ."
-      "footer footer footer";
+      ". footer .";
   }
 }
