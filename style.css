@@ -1,5 +1,5 @@
 body {
-  margin: 0px 0px 0px 25px;
+  margin: 0px 0px 0px 0px;
   padding: 0;
   font-family: "Anonymous Pro", monospace;
   line-height: 1.5em;
@@ -12,16 +12,16 @@ body {
   display: grid;
   grid-template-columns:
     1fr
-    290px
-    290px
-    290px
+    345px
+    345px
+    345px
     1fr;
   grid-template-rows:
-    65px
-    70px
-    70px
-    70px
-    70px
+    85px
+    80px
+    80px
+    80px
+    80px
     1fr
     35px;
   grid-gap: 0px;
@@ -40,19 +40,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 15px;
+  margin: 25px 15px 35px 15px;
 }
-.header .name {
-  font-size: 2em;
+.header .name a{
+  grid-area: name;
+  font-size: 2.2em;
   padding-left: 50px;
+  text-decoration: none;
+  color: black;
 }
 .header .navbar {
+  grid-area: navbar;
   list-style: none;
   padding: 17px;
   display: flex;
   font-size: 1em;
 }
-.header .navbar a {
+.header .navbar a{
   text-decoration: none;
   color: #424242;
   margin: 0px 7px;
@@ -66,11 +70,23 @@ body {
 .contentbox1 {
   grid-area: contentbox1;
 }
+.contentbox1:hover h {
+  background-clip: content-box;
+  background-color: rgb(209, 250, 255);
+}
 .contentbox2 {
   grid-area: contentbox2;
 }
+.contentbox2:hover h {
+  background-clip: content-box;
+  background-color: rgb(209, 250, 255);
+}
 .contentbox3 {
   grid-area: contentbox3;
+}
+.contentbox3:hover h {
+  background-clip: content-box;
+  background-color: rgb(209, 250, 255);
 }
 .footer {
   grid-area: footer;
@@ -81,11 +97,12 @@ body {
 }
 
 h {
-  margin-top: 20px;
-  margin-left: 16px;
   line-height: 1.6em;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: 380;
   color: #424242;
+  margin: 20px;
+  padding-left: 25px;
 }
 .rectangle_1 {
   fill: rgba(255, 255, 255, 1);
@@ -111,9 +128,9 @@ h {
   height: 180px;
 }
 .about_wrapper {
-    position: relative;
-    width: 700px;
-    height: 350px;
+  position: relative;
+  width: 700px;
+  height: 350px;
 }
 
 .text {
@@ -130,15 +147,28 @@ h {
   line-height: 1.48em;
 }
 
+.textbox {
+  width: auto;
+  height: auto;
+  padding: 18px 25px;
+  background-color: white;
+  box-shadow: 11px 11px #d6d6d6;
+  border-style: solid;
+  border-color: #424242;
+  border-width: 1.5px;
+  margin: 0px 20px 20px 20px;
+  color: #656565;
+  font-size: 0.95em;
+}
+
 @media screen and (max-width: 650px) {
   #site_wrap {
-    grid-template-columns:
-      auto;  
+    grid-template-columns: 55px 1fr 55px;
     grid-template-rows:
-      90px
-      240px
-      240px
-      240px
+      160px
+      3fr
+      3fr
+      3fr
       35px;
     grid-template-areas:
       "header header header"
@@ -147,4 +177,40 @@ h {
       ". contentbox3 ."
       ". footer .";
   }
+  .header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 15px 35px 15px;
+  }
+  .header .name {
+    grid-area: name;
+    font-size: 2.2em;
+    padding-left: 50px;
+  }
+  .header .navbar {
+    grid-area: navbar;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+  }
+  .header .navbar a {
+    text-decoration: none;
+    color: #424242;
+    margin: 0px 7px;
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: rgb(210, 186, 255);
+}
+
+::selection {
+  color: black;
+  background: rgb(210, 186, 255);
+  font-weight: bolder;
 }
