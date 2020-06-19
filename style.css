@@ -6,6 +6,25 @@ body {
   font-size: 100%;
 }
 
+#about_site_wrap {
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:
+    80px
+    1fr
+    80px;
+  grid-template-rows:
+    105px
+    1fr
+    80px;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header header"
+    ". contentbox1 ."
+    ". . .";
+}
+
 #site_wrap {
   background-color: white;
   height: 100vh;
@@ -17,7 +36,7 @@ body {
     345px
     1fr;
   grid-template-rows:
-    85px
+    105px
     80px
     80px
     80px
@@ -148,7 +167,7 @@ h {
 }
 
 .textbox {
-  width: auto;
+  width: fit-content;
   height: auto;
   padding: 18px 25px;
   background-color: white;
@@ -176,6 +195,24 @@ h {
       ". contentbox2 ."
       ". contentbox3 ."
       ". footer .";
+  }
+  #about_site_wrap {
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:
+      55px
+      1fr
+      55px;
+    grid-template-rows:
+      160px
+      1fr
+      35px;
+    grid-gap: 0px;
+    grid-template-areas:
+      "header header header"
+      ". contentbox1 ."
+      ". . .";
   }
   .header {
     grid-area: header;
