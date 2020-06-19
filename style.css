@@ -42,7 +42,7 @@ body {
   justify-content: space-between;
   margin: 25px 15px 35px 15px;
 }
-.header .name a{
+.header .name{
   grid-area: name;
   font-size: 2.2em;
   padding-left: 50px;
