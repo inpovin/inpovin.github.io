@@ -8,9 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/e59fef6868.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="about_site_wrap">
+    <div id="contact_site_wrap">
       <div class="header">
         <div class="name">Anna Zhang</div>
         <ul class="navbar">
@@ -20,6 +21,7 @@
           <li><a href="https://drive.google.com/file/d/1jVnO5KhIxDckC6r3iOqb3iEV1rbBq_9T/view" 
                 target="_blank">resume</a></li>
           <li><a href="contact.html" class="active">contact</a></li>
+          <button class="dark_btn" onclick="changeMode()"><i class="fas fa-moon"></i></button>
         </ul>
       </div>
       <div class="contentbox1">
@@ -33,4 +35,10 @@
     </div>
     </div>
   </body>
+  <script>
+    function changeMode() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 </html>

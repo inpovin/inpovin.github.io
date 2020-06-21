@@ -1,12 +1,46 @@
 body {
-  margin: 0px 0px 0px 0px;
+  height: 100%;
+  margin: 0;
   padding: 0;
   font-family: "Anonymous Pro", monospace;
   line-height: 1.5em;
   font-size: 100%;
+  background-color: white;
+}
+
+.dark-mode {
+  filter: invert(100%);
+}
+
+.dark_btn{
+  background-color: white;
+  margin-left: 5px;
+}
+
+.dark_btn:hover{
+  color: rgb(73, 64, 194);
 }
 
 #about_site_wrap {
+  background-color: white;
+  height: 115vh;
+  display: grid;
+  grid-template-columns:
+    80px
+    1fr
+    80px;
+  grid-template-rows:
+    105px
+    1fr
+    80px;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header header"
+    ". contentbox1 ."
+    ". . .";
+}
+
+#contact_site_wrap {
   background-color: white;
   height: 100vh;
   display: grid;
@@ -28,7 +62,7 @@ body {
 #site_wrap {
   background-color: white;
   height: 100vh;
-  display: grid;
+  display: grid; 
   grid-template-columns:
     1fr
     345px
@@ -91,21 +125,21 @@ body {
 }
 .contentbox1:hover h {
   background-clip: content-box;
-  background-color: rgb(209, 250, 255);
+  background-color: rgb(210, 186, 255);
 }
 .contentbox2 {
   grid-area: contentbox2;
 }
 .contentbox2:hover h {
   background-clip: content-box;
-  background-color: rgb(209, 250, 255);
+  background-color: rgb(210, 186, 255);
 }
 .contentbox3 {
   grid-area: contentbox3;
 }
 .contentbox3:hover h {
   background-clip: content-box;
-  background-color: rgb(209, 250, 255);
+  background-color: rgb(210, 186, 255);
 }
 .footer {
   grid-area: footer;
