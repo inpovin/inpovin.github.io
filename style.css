@@ -14,16 +14,21 @@ body {
 
 .dark_btn{
   background-color: white;
-  margin-left: 5px;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 3px;
+  border: 1px solid white;
 }
 
 .dark_btn:hover{
   color: rgb(73, 64, 194);
+  border: 1px outset #cacaca;
+  border-radius: 3px;
 }
 
 #about_site_wrap {
   background-color: white;
-  height: 115vh;
+  height: 100vh;
   display: grid;
   grid-template-columns:
     80px
@@ -122,6 +127,8 @@ body {
 }
 .contentbox1 {
   grid-area: contentbox1;
+  width: fit-content;
+  height: fit-content;
 }
 .contentbox1:hover h {
   background-clip: content-box;
@@ -157,23 +164,6 @@ h {
   margin: 20px;
   padding-left: 25px;
 }
-.rectangle_1 {
-  fill: rgba(255, 255, 255, 1);
-  stroke: #555555;
-  stroke-width: 1.4px;
-  stroke-linejoin: miter;
-  stroke-linecap: butt;
-  stroke-miterlimit: 4;
-  shape-rendering: auto;
-  filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.161));
-  overflow: visible;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-}
 
 .wrapper {
   position: relative;
@@ -184,20 +174,6 @@ h {
   position: relative;
   width: 700px;
   height: 350px;
-}
-
-.text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 10px;
-  bottom: 10px;
-  left: 24px;
-  right: 18px;
-  color: #424242;
-  font-size: 0.8em;
-  line-height: 1.48em;
 }
 
 .textbox {
@@ -214,7 +190,7 @@ h {
   font-size: 0.95em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   #site_wrap {
     grid-template-columns: 55px 1fr 55px;
     grid-template-rows:
