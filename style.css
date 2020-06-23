@@ -14,38 +14,19 @@ body {
 
 .dark_btn{
   background-color: white;
-  padding: 3px;
-  margin: 3px;
+  padding: 2px;
+  margin: 2px;
   border-radius: 3px;
   border: 1px solid white;
 }
 
 .dark_btn:hover{
-  color: rgb(73, 64, 194);
+  color: rgb(109, 101, 231);
   border: 1px outset #cacaca;
   border-radius: 3px;
 }
 
 #about_site_wrap {
-  background-color: white;
-  height: 100vh;
-  display: grid;
-  grid-template-columns:
-    80px
-    1fr
-    80px;
-  grid-template-rows:
-    105px
-    1fr
-    80px;
-  grid-gap: 0px;
-  grid-template-areas:
-    "header header header"
-    ". contentbox1 ."
-    ". . .";
-}
-
-#contact_site_wrap {
   background-color: white;
   height: 100vh;
   display: grid;
@@ -98,14 +79,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 15px 35px 15px;
+  margin: 33px 20px 33px 50px;
 }
-.header .name{
+.header .name a{
   grid-area: name;
-  font-size: 2.2em;
-  padding-left: 50px;
+  font-size: 45px;
   text-decoration: none;
   color: black;
+  line-height: .8em;
 }
 .header .navbar {
   grid-area: navbar;
@@ -113,6 +94,7 @@ body {
   padding: 17px;
   display: flex;
   font-size: 1em;
+  align-items: center;
 }
 .header .navbar a{
   text-decoration: none;
@@ -132,21 +114,24 @@ body {
 }
 .contentbox1:hover h {
   background-clip: content-box;
-  background-color: rgb(210, 186, 255);
+  background-color: #d2e9ff;
+  color:black;
 }
 .contentbox2 {
   grid-area: contentbox2;
 }
 .contentbox2:hover h {
   background-clip: content-box;
-  background-color: rgb(210, 186, 255);
+  background-color: #d2e9ff;
+  color:black;
 }
 .contentbox3 {
   grid-area: contentbox3;
 }
 .contentbox3:hover h {
   background-clip: content-box;
-  background-color: rgb(210, 186, 255);
+  background-color: #d2e9ff;
+  color:black;
 }
 .footer {
   grid-area: footer;
@@ -186,15 +171,18 @@ h {
   border-color: #424242;
   border-width: 1.5px;
   margin: 0px 20px 20px 20px;
-  color: #656565;
+  color: #333333;
   font-size: 0.95em;
+}
+.textbox a{
+  color: black;
 }
 
 @media screen and (max-width: 700px) {
   #site_wrap {
-    grid-template-columns: 55px 1fr 55px;
+    grid-template-columns: 25px 1fr 25px;
     grid-template-rows:
-      160px
+      170px
       3fr
       3fr
       3fr
@@ -211,11 +199,11 @@ h {
     height: 100vh;
     display: grid;
     grid-template-columns:
-      55px
+      25px
       1fr
-      55px;
+      25px;
     grid-template-rows:
-      160px
+      170px
       1fr
       35px;
     grid-gap: 0px;
@@ -253,11 +241,11 @@ h {
 ::-moz-selection {
   /* Code for Firefox */
   color: black;
-  background: rgb(210, 186, 255);
+  background: #CCCCFF;
 }
 
 ::selection {
   color: black;
-  background: rgb(210, 186, 255);
+  background: #CCCCFF;
   font-weight: bolder;
 }
