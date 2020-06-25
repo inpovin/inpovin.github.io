@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  width: fit-content;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Anonymous Pro", monospace;
@@ -36,7 +36,7 @@ body {
     1fr
     80px;
   grid-template-rows:
-    105px
+    110px
     1fr
     80px;
   grid-gap: 0px;
@@ -57,7 +57,7 @@ body {
     345px
     1fr;
   grid-template-rows:
-    105px
+    110px
     80px
     80px
     80px
@@ -80,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 33px 20px 33px 50px;
+  margin: 30px 30px 50px 40px;
 }
 .header .name a{
   grid-area: name;
@@ -88,11 +88,11 @@ body {
   text-decoration: none;
   color: black;
   line-height: .8em;
+  padding-top:8px;
 }
 .header .navbar {
   grid-area: navbar;
   list-style: none;
-  padding: 17px;
   display: flex;
   font-size: 1em;
   align-items: center;
