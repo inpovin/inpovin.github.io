@@ -32,9 +32,9 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns:
-    80px
+    120px
     1fr
-    80px;
+    120px;
   grid-template-rows:
     110px
     1fr
@@ -108,28 +108,44 @@ body {
   font-weight: bolder;
   font-size: 1em;
 }
+.contentbox {
+  grid-area: contentbox1;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+}
+.contentbox:hover h {
+  background-clip: content-box;
+  background-color: #d2e9ff;
+  color:black;
+}
 .contentbox1 {
+  margin: 0px 20px;
   grid-area: contentbox1;
   width: fit-content;
   height: fit-content;
 }
-.contentbox1:hover h {
+.contentbox1:hover hleft {
   background-clip: content-box;
   background-color: #d2e9ff;
   color:black;
 }
 .contentbox2 {
+  margin: 0px 20px;
   grid-area: contentbox2;
 }
-.contentbox2:hover h {
+.contentbox2:hover hleft {
   background-clip: content-box;
   background-color: #d2e9ff;
   color:black;
 }
 .contentbox3 {
+  margin: 0px 20px;
   grid-area: contentbox3;
 }
-.contentbox3:hover h {
+.contentbox3:hover hleft {
   background-clip: content-box;
   background-color: #d2e9ff;
   color:black;
@@ -147,7 +163,12 @@ h {
   font-size: 1.4em;
   font-weight: 380;
   color: #424242;
-  margin: 20px;
+}
+hleft {
+  line-height: 1.6em;
+  font-size: 1.4em;
+  font-weight: 380;
+  color: #424242;
   padding-left: 25px;
 }
 
@@ -171,7 +192,7 @@ h {
   border-style: solid;
   border-color: #424242;
   border-width: 1.5px;
-  margin: 0px 20px 20px 20px;
+  margin: 0px auto 20px auto;
   color: #333333;
   font-size: 0.95em;
 }
