@@ -81,7 +81,8 @@ body {
   grid-gap: 60px;
   grid-template-columns: auto auto;
   justify-content: center;
-  padding: 20px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .header {
@@ -217,7 +218,7 @@ img {
   width: 280px;
   height: 280px;
   background-color: white;
-  box-shadow: 11px 11px #c0c0c0;
+  box-shadow: 11px 11px #d6d6d6;
   border-style: solid;
   border-color: #424242;
   border-width: 1.5px;
@@ -226,7 +227,8 @@ img {
   overflow: hidden;
 }
 .projectbox:hover{
-  border-color: #ffffff;
+  border-color: #79acca;
+  box-shadow: 18px 18px #d6d6d6;
 }
 
 @media screen and (max-width: 700px) {
@@ -244,6 +246,14 @@ img {
       ". contentbox2 ."
       ". contentbox3 ."
       ". footer .";
+  }
+  #projects_site_wrap {
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-top: 20px;
+    text-align: center;
   }
   #about_site_wrap {
     background-color: white;
