@@ -75,12 +75,21 @@ body {
     "footer footer footer footer footer";
 }
 
+#projects_site_wrap {
+  background-color: white;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  padding: 20px;
+}
+
 .header {
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 30px 50px 40px;
+  margin: 15px 30px 50px 40px;
 }
 .header .name a{
   grid-area: name;
@@ -198,6 +207,26 @@ hleft {
 }
 .textbox a{
   color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.projectbox {
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  box-shadow: 11px 11px #c0c0c0;
+  border-style: solid;
+  border-color: #424242;
+  border-width: 1.5px;
+  color: #333333;
+  font-size: 0.95em;
+  overflow: hidden;
+}
+.projectbox:hover{
+  border-color: #ffffff;
 }
 
 @media screen and (max-width: 700px) {

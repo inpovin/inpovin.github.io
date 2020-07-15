@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anna Zhang - Projects">
+    <meta name="keywords" content="Anna Zhang, Anna, Zhang, Vanderbilt, TJ, TJHSST">
+    <meta name="description" content="Anna Zhang's personal website.">
+    <title>Anna Zhang</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e59fef6868.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="name"><a href="">Anna Zhang</a></div>
+      <ul class="navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <!-- <li><a href="https://medium.com/@z.annaw19" target="_blank">blog</a></li>
+        -->
+        <li><a href="projects.html" class="active">projects</a></li>
+        <li><a href="resume.pdf" target="_blank">resume</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <button class="dark_btn" onclick="changeMode()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </ul>
+    </div>
+    <div id="projects_site_wrap">
+        Under construction, <br> project pages coming soon!
+        <div class="projectbox">
+          <img src="imgs/Plant Coaster Square Drawing-crop.jpg" alt="" />
+        </div>
+        <div class="projectbox">
+          <img src="imgs/spyfall.jpg" alt=""/>
+        </div>
+        <div class="projectbox">
+          <img src="imgs/vandyhacks.jpg" alt=""/>
+        </div>
+        <div class="projectbox">
+          <img src="imgs/Hot Pot GBM.jpg" alt=""/>
+        </div>
+    </div>
+  </body>
+  <script>
+    function changeMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
+</html>
