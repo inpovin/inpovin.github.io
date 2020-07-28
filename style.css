@@ -76,6 +76,25 @@ body {
     "footer footer footer footer footer";
 }
 
+#contact_site_wrap {
+  background-color: white;
+  height: 100vh;
+  display: grid; 
+  grid-template-columns:
+    1fr
+    345px
+    1fr;
+  grid-template-rows:
+    90px
+    80px
+    1fr;
+  grid-gap: 0px;
+  grid-template-areas:
+    "header header header"
+    ". contentbox1 ."
+    ". . .";
+}
+
 #projects_site_wrap {
   background-color: white;
   display: grid;
