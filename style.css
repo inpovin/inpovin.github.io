@@ -58,11 +58,11 @@ body {
     319px
     1fr;
   grid-template-rows:
-    100px
-    80px
-    80px
-    80px
-    80px
+    70px
+    65px
+    65px
+    65px
+    65px
     1fr
     35px;
   grid-gap: 0px;
@@ -85,7 +85,7 @@ body {
     345px
     1fr;
   grid-template-rows:
-    100px
+    70px
     80px
     1fr;
   grid-gap: 0px;
@@ -110,15 +110,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 15px 30px 30px 40px;
+  margin: 10px 30px 10px 40px;
 }
 .header .name a{
   grid-area: name;
-  font-size: 45px;
+  font-size: 35px;
   text-decoration: none;
   color: black;
-  line-height: .8em;
-  padding-top:8px;
 }
 .header .navbar {
   grid-area: navbar;
