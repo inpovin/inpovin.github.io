@@ -59,7 +59,7 @@ body {
     1fr;
   grid-template-rows:
     70px
-    65px
+    20px
     65px
     65px
     65px
@@ -68,6 +68,7 @@ body {
   grid-gap: 0px;
   grid-template-areas:
     "header header header header header"
+    ". . . . ."
     ". contentbox1 . . ."
     ". contentbox1 contentbox2 . ."
     ". . contentbox2 contentbox3 ."
