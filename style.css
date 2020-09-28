@@ -87,11 +87,13 @@ body {
     1fr;
   grid-template-rows:
     70px
+    20px
     80px
     1fr;
   grid-gap: 0px;
   grid-template-areas:
     "header header header"
+    ". . ."
     ". contentbox1 ."
     ". . .";
 }
