@@ -87,7 +87,7 @@ body {
     1fr;
   grid-template-rows:
     70px
-    20px
+    70px
     80px
     1fr;
   grid-gap: 0px;
